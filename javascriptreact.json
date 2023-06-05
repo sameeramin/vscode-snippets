@@ -1,0 +1,57 @@
+{
+	"Console log to terminal": {
+		"prefix": "clg",
+		"body": "console.log($1);",
+		"description": "Log output to console"
+	  },
+	  "Enviroment variable": {
+		"prefix": "env",
+		"body": "process.env.$1",
+		"description": "Get enviroment variable"
+	  },
+	"Regular functional component with export": {
+		"prefix": "rfc",
+		"body": "export default function $1() {\n  return (\n    <$2 />\n  );\n}",
+		"description": "Regular functional component with export"
+	  },
+
+  "reactFunctionalExportComponent": {
+    "prefix": "rfce",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}}"
+    ],
+    "description": "Creates a React Functional Component with ES7 module system"
+  },
+  "useState": {
+    "prefix": "uses",
+    "body": [
+      "const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})"
+    ],
+    "description": "Creates a code block for useState hook"
+  },
+  "useContext": {
+    "prefix": "usec",
+    "body": ["const ${1:first} = useContext(${2:second})"],
+    "description": "Creates a code block for useContext hook"
+  },
+  "useEffect": {
+    "prefix": "usee",
+    "body": [
+      "useEffect(() => {",
+      "  ${1:first}",
+      "",
+      "  return () => {",
+      "    ${2:second}",
+      "  }",
+      "}, [${3:third}])",
+      ""
+    ],
+    "description": "Creates a code block for useEffect hook"
+  }
+}
