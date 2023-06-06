@@ -1,0 +1,12 @@
+{
+  "Console log to terminal": {
+    "prefix": "clg",
+    "body": "console.log($1);",
+    "description": "Log output to console"
+  },
+  "Enviroment variable": {
+    "prefix": "env",
+    "body": "process.env.$1",
+    "description": "Get enviroment variable"
+  }
+}
