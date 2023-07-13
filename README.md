@@ -1,5 +1,3 @@
-<!-- Generate README file for the github repo for this project -->
-
 # VS Code Snippets
 VS Code Snippets is a collection of code snippets for Moodle, React and JavaScript. It is a work in progress and will be updated as I continue to learn and develop.
 
